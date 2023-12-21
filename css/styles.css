@@ -1,4 +1,7 @@
 @media screen and (max-width: 600px) {
+  .container {
+    width: 520px;
+  }
 }
 
 body {
@@ -6,147 +9,59 @@ body {
   line-height: 1.5;
   font-family: "Crafty Girls", cursive;
 }
-
-.menu-btn {
-  border: none;
-}
 .container {
-  width: 520px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.wrapper {
+
+.hero-btn {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 20px 20px;
+  margin-top: 30px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 6px;
+  font-size: 24px;
 }
 
-.photo {
-  width: 320px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.ball-photo-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.ball-photo {
-  position: absolute;
-  top: 0;
+.backdrop {
+  position: fixed;
   left: 0;
-  opacity: 0;
-  margin-left: 70px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: beige;
 }
 
-.first {
-  animation-name: ball;
-  animation-duration: 3s;
+.is-hidden {
+  display: none;
+}
+.icon {
+  position: absolute;
+  left: 12%;
+  top: 20%;
+  fill: green;
+
+  animation-name: rootage;
+  animation-duration: 2s; /* збільшено на 1 секунду */
   animation-timing-function: linear;
   animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 
-.second {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 2s;
-}
-
-.third {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 3s;
-}
-
-.fourth {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 4s;
-}
-
-.fifth {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 5s;
-}
-
-.sixth {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 6s;
-}
-
-.seventh {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 7s;
-}
-
-.eighth {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 8s;
-}
-
-.nineth {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 9s;
-}
-
-.tenth {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 10s;
-}
-
-.eleventh {
-  animation-name: ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 11s;
-}
-.twelth {
-  animation-name: last-ball;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 12s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes ball {
+@keyframes rootage {
   0% {
-    opacity: 0;
+    transform: rotate(0deg); /* виправлено */
   }
   50% {
-    opacity: 1;
+    transform: rotate(-10deg);
   }
-
   100% {
-    opacity: 0;
+    transform: rotate(0deg); /* виправлено */
   }
-}
-@keyframes last-ball {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.main {
-  padding-top: 300px;
 }

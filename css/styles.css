@@ -26,3 +26,127 @@ body {
   margin-top: 20px;
   margin-bottom: 50px;
 }
+
+.ball-photo-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.ball-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  margin-left: 70px;
+}
+
+.first {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.second {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+
+.third {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+
+.fourth {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+}
+
+.fifth {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+}
+
+.sixth {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+}
+
+.seventh {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 7s;
+}
+
+.eighth {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 8s;
+}
+
+.nineth {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 9s;
+}
+
+.tenth {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 10s;
+}
+
+.eleventh {
+  animation-name: ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 11s;
+}
+.twelth {
+  animation-name: last-ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ball {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes last-ball {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.main {
+  padding-top: 300px;
+}
